@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riddle Solver Game</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <div class="landing-container">
+    <div class="landing-content">
+      <h1>Welcome to the Riddle Solver Game</h1>
+      <p>Test your mind and solve tricky riddles. Can you answer them all?</p>
+      <button class="start-btn">Start Game</button>
+    </div>
+  </div>
+
+  <!-- Game Page (Initially hidden) -->
+  <div class="game-container" style="display: none;">
+    <div class="overlay">
+      <div class="game-screen">
+        <div class="riddle-container">
+          <p class="riddle-text"></p>
+          <input type="text" class="answer-input" placeholder="Your answer...">
+          <button class="submit-btn">Submit</button>
+          <p class="feedback"></p>
+          <p class="correct-answer"></p>
+          <button class="next-btn" style="display: none;">Next</button>
+          <p class="counter"></p>
+        </div>
+      </div>
+
+      <div class="score-card" style="display: none;">
+        <p>Game Over!</p>
+        <p>Your Score: <span class="final-score"></span> / <span class="total-riddles"></span></p>
+        <button class="restart-btn">Restart Game</button>
+      </div>
+
+      <div class="congratulations-message" style="display: none;">
+        🎉 Congratulations! You've solved all the riddles!
+      </div>
+    </div>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>
+
+
+
